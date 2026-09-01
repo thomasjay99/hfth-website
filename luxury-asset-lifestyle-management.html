@@ -1,0 +1,3161 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* Hosting from the Heart — Webfonts
+   Display:  Cormorant Garamond (high-contrast luxury serif, small caps)
+   Serif:    EB Garamond (editorial lead paragraphs + italics)
+   Sans/UI:  Montserrat (eyebrows, body, interface)
+   NOTE: Original proposal fonts were not supplied as binaries; these are the
+   closest Google Fonts matches and are loaded from the Google Fonts CDN. */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/fe5abe5a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c8d44278.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/18a08100.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/3d64035d.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/dd55bb92.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/39def6a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/3f201ee7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/fe5abe5a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c8d44278.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/18a08100.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/3d64035d.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/dd55bb92.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/39def6a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/3f201ee7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+  /* HFTH-MOBILE-V2 */
+  html { -webkit-text-size-adjust: 100%; }
+  img, svg, video, iframe { max-width: 100%; }
+  @media (hover: none) {
+    .hfth-collcard:hover { transform: none !important; box-shadow: var(--shadow-sm) !important; }
+    .hfth-collcard:hover .hfth-collimg { transform: none !important; }
+  }
+  @media (max-width: 1024px) {
+    .hfth-proplayout { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .hfth-bookcard { position: static !important; }
+    .hfth-gallery { grid-auto-rows: 170px !important; }
+    .hfth-namerow { grid-template-columns: 1fr 1fr !important; row-gap: 10px !important; }
+    .hfth-pfilters { overflow-x: auto !important; flex-wrap: nowrap !important; -webkit-overflow-scrolling: touch; padding-bottom: 8px !important; }
+    .hfth-pfilter { flex: none !important; white-space: nowrap !important; }
+  }
+  @media (max-width: 820px) {
+    .hfth-hero-h1 { font-size: 40px !important; line-height: 1.06 !important; }
+    .hfth-herometa { gap: 14px 20px !important; }
+    .hfth-gallery { grid-template-columns: repeat(2, 1fr) !important; grid-auto-rows: 140px !important; }
+    .hfth-gallery > div { grid-row: span 1 !important; }
+    .hfth-gallery > div:first-child { grid-column: span 2 !important; grid-row: span 2 !important; }
+    .hfth-namerow { grid-template-columns: 1fr !important; gap: 10px !important; padding: 18px 20px !important; }
+    .hfth-alpha { gap: 7px !important; }
+    .hfth-alpha a { width: 34px !important; height: 34px !important; }
+    .hfth-timeline { grid-template-columns: 1fr !important; gap: 46px !important; }
+    .hfth-tline { display: none !important; }
+    .hfth-toolbar, .hfth-tray, .hfth-strip { flex-wrap: wrap !important; }
+    .hfth-bookcard { padding: 28px 24px !important; }
+    .hfth-pcard { grid-template-columns: 1fr !important; }
+    input, select, textarea { font-size: 16px !important; }
+    a, button, select, input, textarea { -webkit-tap-highlight-color: rgba(230,180,95,0.22); }
+    .hfth-book a, .hfth-bookcard a, .hfth-capture button, .hfth-capture a { min-height: 48px !important; }
+    .hfth-foot { padding-bottom: calc(32px + env(safe-area-inset-bottom)) !important; }
+  }
+  @media (max-width: 480px) {
+    .hfth-sec { padding-left: 18px !important; padding-right: 18px !important; padding-top: 54px !important; padding-bottom: 54px !important; }
+    .hfth-heroin { padding-left: 18px !important; padding-right: 18px !important; }
+    .hfth-hero-h1 { font-size: 34px !important; }
+    .hfth-sec h2 { font-size: 27px !important; }
+    .hfth-collcard h3 { font-size: 21px !important; }
+    .hfth-gallery { grid-template-columns: 1fr !important; grid-auto-rows: 200px !important; }
+    .hfth-gallery > div, .hfth-gallery > div:first-child { grid-column: span 1 !important; grid-row: span 1 !important; }
+    .hfth-statnum { font-size: 58px !important; }
+    .hfth-badgechip { height: 54px !important; padding: 0 12px !important; }
+    .hfth-trustband { justify-content: center !important; gap: 10px !important; }
+    .hfth-foot { padding-left: 18px !important; padding-right: 18px !important; }
+  }
+</style>
+<style>/* Hosting from the Heart — Color tokens
+   Derived from the HFTH Premier Collection proposal: bronze-gold, warm
+   charcoal, and a family of cream/sand neutrals, plus alpine accents
+   sampled from property photography (spruce + river slate). */
+:root {
+  /* ---- Brand gold (bronze) ---- */
+  --gold-800: #6F5430;
+  --gold-700: #8C6A3C;   /* pressed / strong */
+  --gold-600: #A37B45;   /* hover */
+  --gold-500: #B08850;   /* PRIMARY brand gold */
+  --gold-400: #C7A267;
+  --gold-300: #E6B45E;   /* bright brass highlight (rules, dividers) */
+  --gold-200: #E7D8BE;
+  --gold-100: #F3EBDC;   /* gold wash background */
+  --gold-50:  #FAF4E9;
+
+  /* ---- Warm neutrals ---- */
+  --white:    #FFFFFF;
+  --cream-50: #FCFAF6;   /* page background */
+  --cream-100:#FAF7F2;
+  --cream-200:#F5F0E8;   /* sand surface */
+  --cream-300:#EDE7DD;   /* hairline border */
+  --sand-400: #E0D8CC;   /* default border */
+  --sand-500: #CFC4B2;   /* strong border */
+
+  --ink-900:  #2E2B28;   /* headings (warm near-black) */
+  --ink-800:  #3F3B37;   /* body strong */
+  --ink-700:  #4F4A45;
+  --gray-600: #6E6A64;   /* secondary text */
+  --gray-500: #8A857E;   /* muted text */
+  --gray-400: #B4AEA4;   /* faint / disabled */
+  --gray-300: #D2CCC2;
+
+  /* ---- Alpine accents (photography-derived) ---- */
+  --spruce-700: #2C4A43; /* deep evergreen */
+  --spruce-600: #345A50;
+  --spruce-500: #3E6157;
+  --river-700:  #2F4A5E; /* slate blue */
+  --river-600:  #3C5A72;
+  --river-400:  #5E7E96;
+  --terracotta-600: #9E4B3C; /* warm rust (accent only) */
+
+  /* ---- Semantic status ---- */
+  --success: #4E7A5B;
+  --success-soft: #E6EEE7;
+  --warning: #C08A3E;
+  --warning-soft: #F6EBD8;
+  --danger:  #9E4B3C;
+  --danger-soft: #F3E3DE;
+  --info:    #3C5A72;
+  --info-soft: #E4EAEF;
+
+  /* ---- Semantic aliases ---- */
+  --bg-page:        var(--cream-50);
+  --bg-page-warm:   var(--cream-100);
+  --bg-sand:        var(--cream-200);
+  --bg-ink:         var(--ink-900);   /* dark feature sections */
+  --bg-gold-wash:   var(--gold-100);
+
+  --surface-card:   var(--white);
+  --surface-raised: var(--white);
+  --surface-sunken: var(--cream-100);
+
+  --text-heading:   var(--ink-900);
+  --text-body:      var(--ink-800);
+  --text-muted:     var(--gray-600);
+  --text-faint:     var(--gray-500);
+  --text-on-dark:        var(--cream-100);
+  --text-on-dark-muted:  rgba(245,240,232,0.68);
+  --text-accent:    var(--gold-700);
+
+  --accent:         var(--gold-500);
+  --accent-hover:   var(--gold-600);
+  --accent-active:  var(--gold-700);
+  --accent-soft:    var(--gold-100);
+  --rule-gold:      var(--gold-500);
+  --rule-brass:     var(--gold-300);
+
+  --border-subtle:  var(--cream-300);
+  --border-default: var(--sand-400);
+  --border-strong:  var(--sand-500);
+  --border-onDark:  rgba(245,240,232,0.18);
+
+  --focus-ring:     rgba(176,136,80,0.45);
+  --overlay-scrim:  rgba(46,43,40,0.55);
+}
+</style>
+<style>/* Hosting from the Heart — Typography tokens */
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-serif:   'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ---- Weights ---- */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---- Type scale ---- */
+  --text-2xs:  0.6875rem;  /* 11px — micro labels */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.8125rem;  /* 13px */
+  --text-base: 0.9375rem;  /* 15px — UI default */
+  --text-md:   1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.375rem;   /* 22px */
+  --text-2xl:  1.75rem;    /* 28px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  3rem;       /* 48px */
+  --text-5xl:  4rem;       /* 64px */
+  --text-6xl:  5.5rem;     /* 88px — hero display */
+
+  /* ---- Line heights ---- */
+  --leading-none:    1;
+  --leading-tight:   1.1;   /* display */
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;   /* UI body */
+  --leading-relaxed: 1.7;   /* serif reading */
+
+  /* ---- Letter spacing ---- */
+  --tracking-eyebrow: 0.22em;  /* uppercase letterspaced labels */
+  --tracking-caps:    0.14em;
+  --tracking-wide:    0.06em;
+  --tracking-normal:  0;
+  --tracking-tight:  -0.01em;
+  --tracking-display:-0.005em;
+}
+</style>
+<style>/* Hosting from the Heart — Spacing & layout tokens
+   Base unit 4px; the brand leans on generous, editorial whitespace. */
+:root {
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+  --space-10: 8rem;     /* 128 */
+
+  /* Layout */
+  --container-sm:  640px;
+  --container-md:  860px;
+  --container-lg:  1120px;
+  --container-xl:  1320px;
+  --gutter:        var(--space-5);
+  --section-y:     var(--space-9);
+}
+</style>
+<style>/* Hosting from the Heart — Effects: radii, borders, shadows, motion.
+   The brand reads quiet and refined: small radii, hairline warm borders,
+   soft low-spread shadows. Avoid heavy drop shadows and large rounding. */
+:root {
+  /* ---- Corner radii ---- */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;    /* default card / input */
+  --radius-lg:   12px;
+  --radius-xl:   18px;
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--border-subtle);
+  --border-thin:     1px solid var(--border-default);
+  --border-medium:   1.5px solid var(--border-strong);
+
+  /* ---- Shadows (warm ink, low spread) ---- */
+  --shadow-xs: 0 1px 2px rgba(46,43,40,0.04);
+  --shadow-sm: 0 1px 3px rgba(46,43,40,0.06), 0 1px 2px rgba(46,43,40,0.04);
+  --shadow-md: 0 6px 18px rgba(46,43,40,0.07);
+  --shadow-lg: 0 14px 36px rgba(46,43,40,0.10);
+  --shadow-xl: 0 28px 64px rgba(46,43,40,0.14);
+  --shadow-gold: 0 10px 28px rgba(176,136,80,0.24);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);    /* @kind other */
+  --duration-fast: 150ms; /* @kind other */
+  --duration:      240ms; /* @kind other */
+  --duration-slow: 420ms; /* @kind other */
+
+  /* ---- Focus ---- */
+  --focus-shadow: 0 0 0 3px var(--focus-ring);
+}
+</style>
+<style>/* Hosting from the Heart — Base element styles + brand helpers.
+   Lightweight resets and a handful of signature helper classes. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings use the high-contrast serif with Title Case + small caps */
+.hfth-display,
+.hfth-h1, .hfth-h2, .hfth-h3 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  margin: 0;
+}
+.hfth-h1 { font-size: var(--text-5xl); }
+.hfth-h2 { font-size: var(--text-3xl); }
+.hfth-h3 { font-size: var(--text-2xl); }
+
+/* Signature title treatment: Title Case rendered as small caps */
+.hfth-titlecaps {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  color: var(--text-heading);
+  line-height: var(--leading-tight);
+  margin: 0;
+}
+
+/* Eyebrow / kicker label — uppercase, wide tracking, gold */
+.hfth-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+.hfth-eyebrow--muted { color: var(--text-faint); }
+.hfth-eyebrow--onDark { color: var(--gold-300); }
+
+/* Short gold accent rule used beneath section titles */
+.hfth-rule {
+  display: block;
+  width: 56px;
+  height: 2px;
+  border: 0;
+  background: var(--rule-gold);
+  margin: var(--space-4) 0;
+}
+
+/* Editorial lead paragraph in the reading serif */
+.hfth-lead {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  line-height: var(--leading-relaxed);
+  color: var(--text-body);
+}
+
+/* Body copy helper */
+.hfth-body { font-family: var(--font-sans); font-size: var(--text-base); line-height: var(--leading-normal); color: var(--text-body); }
+
+a { color: var(--text-accent); text-decoration: none; }
+a:hover { color: var(--accent-active); }
+
+::selection { background: var(--gold-200); color: var(--ink-900); }
+</style>
+<style>/* Hosting from the Heart — Design System
+   Single global entry point. Consumers link this one file.
+   Keep this as @import lines only. */
+/* Hosting from the Heart — Webfonts
+   Display:  Cormorant Garamond (high-contrast luxury serif, small caps)
+   Serif:    EB Garamond (editorial lead paragraphs + italics)
+   Sans/UI:  Montserrat (eyebrows, body, interface)
+   NOTE: Original proposal fonts were not supplied as binaries; these are the
+   closest Google Fonts matches and are loaded from the Google Fonts CDN. */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/035eb4b8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/36ac7036.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/921a5da1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/07498875.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/50f518b7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/2fb6a802.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/fff565da.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/c348e3cd.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/e5d988a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/706e72d8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/fe5abe5a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c8d44278.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/18a08100.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/3d64035d.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/dd55bb92.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/39def6a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/3f201ee7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/fe5abe5a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c8d44278.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/18a08100.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/3d64035d.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/dd55bb92.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/39def6a0.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/3f201ee7.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/daf69ae6.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/73b9f2d7.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/9dc3aebf.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/1af0a60f.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/b553ad6c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/5f8be2d8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/51a29542.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/e3741d57.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/c92fc4b8.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/61907828.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/45452e12.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/lalm/bafd4565.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* Hosting from the Heart — Color tokens
+   Derived from the HFTH Premier Collection proposal: bronze-gold, warm
+   charcoal, and a family of cream/sand neutrals, plus alpine accents
+   sampled from property photography (spruce + river slate). */
+:root {
+  /* ---- Brand gold (bronze) ---- */
+  --gold-800: #6F5430;
+  --gold-700: #8C6A3C;   /* pressed / strong */
+  --gold-600: #A37B45;   /* hover */
+  --gold-500: #B08850;   /* PRIMARY brand gold */
+  --gold-400: #C7A267;
+  --gold-300: #E6B45E;   /* bright brass highlight (rules, dividers) */
+  --gold-200: #E7D8BE;
+  --gold-100: #F3EBDC;   /* gold wash background */
+  --gold-50:  #FAF4E9;
+
+  /* ---- Warm neutrals ---- */
+  --white:    #FFFFFF;
+  --cream-50: #FCFAF6;   /* page background */
+  --cream-100:#FAF7F2;
+  --cream-200:#F5F0E8;   /* sand surface */
+  --cream-300:#EDE7DD;   /* hairline border */
+  --sand-400: #E0D8CC;   /* default border */
+  --sand-500: #CFC4B2;   /* strong border */
+
+  --ink-900:  #2E2B28;   /* headings (warm near-black) */
+  --ink-800:  #3F3B37;   /* body strong */
+  --ink-700:  #4F4A45;
+  --gray-600: #6E6A64;   /* secondary text */
+  --gray-500: #8A857E;   /* muted text */
+  --gray-400: #B4AEA4;   /* faint / disabled */
+  --gray-300: #D2CCC2;
+
+  /* ---- Alpine accents (photography-derived) ---- */
+  --spruce-700: #2C4A43; /* deep evergreen */
+  --spruce-600: #345A50;
+  --spruce-500: #3E6157;
+  --river-700:  #2F4A5E; /* slate blue */
+  --river-600:  #3C5A72;
+  --river-400:  #5E7E96;
+  --terracotta-600: #9E4B3C; /* warm rust (accent only) */
+
+  /* ---- Semantic status ---- */
+  --success: #4E7A5B;
+  --success-soft: #E6EEE7;
+  --warning: #C08A3E;
+  --warning-soft: #F6EBD8;
+  --danger:  #9E4B3C;
+  --danger-soft: #F3E3DE;
+  --info:    #3C5A72;
+  --info-soft: #E4EAEF;
+
+  /* ---- Semantic aliases ---- */
+  --bg-page:        var(--cream-50);
+  --bg-page-warm:   var(--cream-100);
+  --bg-sand:        var(--cream-200);
+  --bg-ink:         var(--ink-900);   /* dark feature sections */
+  --bg-gold-wash:   var(--gold-100);
+
+  --surface-card:   var(--white);
+  --surface-raised: var(--white);
+  --surface-sunken: var(--cream-100);
+
+  --text-heading:   var(--ink-900);
+  --text-body:      var(--ink-800);
+  --text-muted:     var(--gray-600);
+  --text-faint:     var(--gray-500);
+  --text-on-dark:        var(--cream-100);
+  --text-on-dark-muted:  rgba(245,240,232,0.68);
+  --text-accent:    var(--gold-700);
+
+  --accent:         var(--gold-500);
+  --accent-hover:   var(--gold-600);
+  --accent-active:  var(--gold-700);
+  --accent-soft:    var(--gold-100);
+  --rule-gold:      var(--gold-500);
+  --rule-brass:     var(--gold-300);
+
+  --border-subtle:  var(--cream-300);
+  --border-default: var(--sand-400);
+  --border-strong:  var(--sand-500);
+  --border-onDark:  rgba(245,240,232,0.18);
+
+  --focus-ring:     rgba(176,136,80,0.45);
+  --overlay-scrim:  rgba(46,43,40,0.55);
+}
+
+/* Hosting from the Heart — Typography tokens */
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-serif:   'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ---- Weights ---- */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---- Type scale ---- */
+  --text-2xs:  0.6875rem;  /* 11px — micro labels */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.8125rem;  /* 13px */
+  --text-base: 0.9375rem;  /* 15px — UI default */
+  --text-md:   1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.375rem;   /* 22px */
+  --text-2xl:  1.75rem;    /* 28px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  3rem;       /* 48px */
+  --text-5xl:  4rem;       /* 64px */
+  --text-6xl:  5.5rem;     /* 88px — hero display */
+
+  /* ---- Line heights ---- */
+  --leading-none:    1;
+  --leading-tight:   1.1;   /* display */
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;   /* UI body */
+  --leading-relaxed: 1.7;   /* serif reading */
+
+  /* ---- Letter spacing ---- */
+  --tracking-eyebrow: 0.22em;  /* uppercase letterspaced labels */
+  --tracking-caps:    0.14em;
+  --tracking-wide:    0.06em;
+  --tracking-normal:  0;
+  --tracking-tight:  -0.01em;
+  --tracking-display:-0.005em;
+}
+
+/* Hosting from the Heart — Spacing & layout tokens
+   Base unit 4px; the brand leans on generous, editorial whitespace. */
+:root {
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+  --space-10: 8rem;     /* 128 */
+
+  /* Layout */
+  --container-sm:  640px;
+  --container-md:  860px;
+  --container-lg:  1120px;
+  --container-xl:  1320px;
+  --gutter:        var(--space-5);
+  --section-y:     var(--space-9);
+}
+
+/* Hosting from the Heart — Effects: radii, borders, shadows, motion.
+   The brand reads quiet and refined: small radii, hairline warm borders,
+   soft low-spread shadows. Avoid heavy drop shadows and large rounding. */
+:root {
+  /* ---- Corner radii ---- */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;    /* default card / input */
+  --radius-lg:   12px;
+  --radius-xl:   18px;
+  --radius-pill: 999px;
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--border-subtle);
+  --border-thin:     1px solid var(--border-default);
+  --border-medium:   1.5px solid var(--border-strong);
+
+  /* ---- Shadows (warm ink, low spread) ---- */
+  --shadow-xs: 0 1px 2px rgba(46,43,40,0.04);
+  --shadow-sm: 0 1px 3px rgba(46,43,40,0.06), 0 1px 2px rgba(46,43,40,0.04);
+  --shadow-md: 0 6px 18px rgba(46,43,40,0.07);
+  --shadow-lg: 0 14px 36px rgba(46,43,40,0.10);
+  --shadow-xl: 0 28px 64px rgba(46,43,40,0.14);
+  --shadow-gold: 0 10px 28px rgba(176,136,80,0.24);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);    /* @kind other */
+  --duration-fast: 150ms; /* @kind other */
+  --duration:      240ms; /* @kind other */
+  --duration-slow: 420ms; /* @kind other */
+
+  /* ---- Focus ---- */
+  --focus-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+/* Hosting from the Heart — Base element styles + brand helpers.
+   Lightweight resets and a handful of signature helper classes. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings use the high-contrast serif with Title Case + small caps */
+.hfth-display,
+.hfth-h1, .hfth-h2, .hfth-h3 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  margin: 0;
+}
+.hfth-h1 { font-size: var(--text-5xl); }
+.hfth-h2 { font-size: var(--text-3xl); }
+.hfth-h3 { font-size: var(--text-2xl); }
+
+/* Signature title treatment: Title Case rendered as small caps */
+.hfth-titlecaps {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  color: var(--text-heading);
+  line-height: var(--leading-tight);
+  margin: 0;
+}
+
+/* Eyebrow / kicker label — uppercase, wide tracking, gold */
+.hfth-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+.hfth-eyebrow--muted { color: var(--text-faint); }
+.hfth-eyebrow--onDark { color: var(--gold-300); }
+
+/* Short gold accent rule used beneath section titles */
+.hfth-rule {
+  display: block;
+  width: 56px;
+  height: 2px;
+  border: 0;
+  background: var(--rule-gold);
+  margin: var(--space-4) 0;
+}
+
+/* Editorial lead paragraph in the reading serif */
+.hfth-lead {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  line-height: var(--leading-relaxed);
+  color: var(--text-body);
+}
+
+/* Body copy helper */
+.hfth-body { font-family: var(--font-sans); font-size: var(--text-base); line-height: var(--leading-normal); color: var(--text-body); }
+
+a { color: var(--text-accent); text-decoration: none; }
+a:hover { color: var(--accent-active); }
+
+::selection { background: var(--gold-200); color: var(--ink-900); }
+
+</style>
+<script src="assets/lalm/b494a13f.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; }
+  * { box-sizing: border-box; }
+  body { background: var(--bg-page); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: var(--sand-400); border-radius: 999px; }
+  ::-webkit-scrollbar-track { background: var(--cream-100); }
+  /* Brand gold remap → HFTH yellow #E6B45F for solid fills/CTAs/dots/rules.
+     Fine gold TEXT keeps a darker gold (gold-700) so it stays legible on light. */
+  :root {
+    --gold-500: #E6B45F;   /* PRIMARY brand gold → HFTH yellow */
+    --gold-600: #D19E45;   /* hover */
+    --gold-700: #B8862E;   /* pressed + fine gold text (italic quotes) */
+    --accent: var(--gold-500);        /* eyebrows → match the gold rule (#E6B45F) */
+    --accent-hover: var(--gold-600);
+    --accent-active: var(--gold-700);
+    --rule-gold: var(--gold-500);
+  }
+  /* Primary gold CTAs: force legible forest-green label on the bright yellow */
+  .hfth-nav-link { position: relative; }
+  .hfth-nav-link::after { content: ""; position: absolute; left: 0; bottom: -5px; height: 1px; width: 0; background: var(--gold-400); transition: width .3s ease; }
+  .hfth-nav-link:hover::after { width: 100%; }
+  .hfth-nav-link:hover { color: var(--gold-300) !important; }
+
+  /* ── Mobile optimization (phones & small tablets only; desktop untouched) ── */
+  @media (max-width: 820px) {
+    /* Stack every multi-column grid into a single column */
+    [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+    /* Collapse the header nav to logo + Inquire; tighten its padding */
+    #hfth-header nav .hfth-nav-link { display: none !important; }
+    #hfth-header nav { gap: 0 !important; }
+    #hfth-header > div { padding-left: 18px !important; padding-right: 18px !important; }
+    /* Comfortable side gutters on every section + footer */
+    section, footer { padding-left: 22px !important; padding-right: 22px !important; }
+    /* Hero inner wrapper carries its own horizontal padding */
+    #top > div { padding-left: 22px !important; padding-right: 22px !important; }
+    /* Neutralize the absolutely-positioned floating "By Invitation" card so it flows in-column */
+    [style*="left: -26px"] { position: static !important; left: auto !important; bottom: auto !important; margin: 16px 0 0 0 !important; max-width: none !important; }
+    /* Prevent iOS zoom-on-focus by keeping form inputs at 16px */
+    #engage input { font-size: 16px !important; }
+    /* Cap tall content images so portrait shots don't dominate the viewport */
+    img[style*="height: 540px"], img[style*="height: 500px"],
+    img[style*="height: 480px"], img[style*="height: 460px"],
+    img[style*="height: 380px"] { height: 340px !important; }
+    /* Ease the hero's top padding now that the nav is compact */
+    #top > div { padding-top: 104px !important; }
+    /* Belt-and-braces: nothing should force horizontal scroll */
+    html, body { overflow-x: hidden !important; max-width: 100% !important; }
+  }
+  @media (max-width: 520px) {
+    /* A touch more breathing room and smaller logo wordmark on phones */
+    #hfth-header > div span { font-size: 15px !important; }
+    /* Slightly shorter image bands and tighter gutters on small phones */
+    img[style*="height: 540px"], img[style*="height: 500px"],
+    img[style*="height: 480px"], img[style*="height: 460px"],
+    img[style*="height: 380px"] { height: 280px !important; }
+    section, footer { padding-left: 18px !important; padding-right: 18px !important; }
+    #top > div { padding-left: 18px !important; padding-right: 18px !important; }
+    /* Dial back the very large centered display headings on exclusivity/contact */
+    #exclusivity h2 { font-size: 34px !important; }
+  }
+
+/* ---- shared site header/footer styles ---- */
+:root { --forest-700: #1A3D32; --forest-800: #142E26; }
+
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAFAF8; }
+  .hfth-titlecaps { font-family: var(--font-display); font-weight: 600; font-variant: small-caps; letter-spacing: 0.02em; line-height: 1.08; color: var(--forest-700); }
+  .nav-link { position: relative; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: -6px; height: 1px; width: 0; background: var(--gold-500); transition: width .3s ease; }
+  .nav-link:hover::after { width: 100%; }
+  @keyframes hfthRise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .hfth-collcard { transition: transform .3s ease, box-shadow .3s ease; }
+  .hfth-collcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .hfth-collcard:hover .hfth-collimg { transform: scale(1.05); }
+  @media (max-width: 1100px) {
+    .hfth-headrow { padding-left: 28px !important; padding-right: 28px !important; gap: 16px !important; }
+    .hfth-nav { gap: 22px !important; }
+    .hfth-phone { display: none !important; }
+  }
+  .hfth-nav { flex-wrap: nowrap !important; }
+  @media (max-width: 1180px) {
+    .hfth-nav { gap: 16px !important; }
+    .hfth-nav a, .hfth-nav button { font-size: 11px !important; letter-spacing: 0.06em !important; white-space: nowrap; }
+  }
+  @media (max-width: 1024px) {
+    .hfth-nav { display: none !important; }
+    .hfth-burger { display: inline-flex !important; }
+  }
+  .hfth-burger { display: none; }
+  @media (max-width: 1024px) {
+    .hfth-cards { grid-template-columns: repeat(2, 1fr) !important; }
+    .hfth-promise, .hfth-coll, .hfth-capture { grid-template-columns: 1fr !important; }
+    .hfth-foot { grid-template-columns: 1fr 1fr !important; }
+  }
+  @media (max-width: 820px) {
+    .hfth-nav { display: none !important; }
+    .hfth-burger { display: inline-flex !important; }
+    .hfth-sec { padding-left: 22px !important; padding-right: 22px !important; padding-top: 64px !important; padding-bottom: 64px !important; }
+    .hfth-sec h2 { font-size: 32px !important; }
+    .hfth-heroin { padding: 0 22px 44px !important; }
+    .hfth-hero-h1 { font-size: 42px !important; }
+    .hfth-heroin > div > p { font-size: 17px !important; }
+    .hfth-book { grid-template-columns: 1fr !important; }
+    .hfth-book a { width: 100%; }
+    .hfth-trust { grid-template-columns: 1fr !important; padding: 26px 22px !important; gap: 18px !important; }
+    .hfth-cards { grid-template-columns: 1fr !important; }
+    .hfth-stats { display: flex !important; flex-direction: column !important; gap: 52px !important; }
+    .hfth-statdiv { display: none !important; }
+    .hfth-statnum { font-size: 76px !important; }
+    .hfth-carousel { gap: 10px !important; }
+    .hfth-carousel blockquote { font-size: 19px !important; }
+    .hfth-mega { grid-template-columns: 1fr !important; gap: 26px !important; }
+    .hfth-foot { grid-template-columns: 1fr !important; gap: 34px !important; padding: 56px 22px 32px !important; }
+    .hfth-collcard > div[style*="padding"] { padding-left: 26px !important; padding-right: 26px !important; }
+    .hfth-capture > div { padding: 32px 26px !important; }
+  }
+
+</style>
+<link rel="stylesheet" href="_ds/hosting-from-the-heart-design-system-0547afd6-bff0-4ce9-911e-73e02371a2e3/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/hosting-from-the-heart-design-system-0547afd6-bff0-4ce9-911e-73e02371a2e3/tokens/colors.css">
+<link rel="stylesheet" href="_ds/hosting-from-the-heart-design-system-0547afd6-bff0-4ce9-911e-73e02371a2e3/tokens/typography.css">
+<link rel="stylesheet" href="_ds/hosting-from-the-heart-design-system-0547afd6-bff0-4ce9-911e-73e02371a2e3/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/hosting-from-the-heart-design-system-0547afd6-bff0-4ce9-911e-73e02371a2e3/tokens/effects.css">
+</helmet>
+
+<div style="font-family: var(--font-sans); color: var(--text-body); background: var(--bg-page); overflow-x: hidden; position: relative;">
+
+  <header style="position: sticky; top: 0; z-index: 60; background: rgba(250,250,248,0.90); backdrop-filter: saturate(140%) blur(12px); border-bottom: 1px solid var(--border-subtle);">
+    <div class="hfth-headrow" style="max-width: 1280px; margin: 0 auto; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <a href="index.html" style="display: flex; align-items: center; flex: none;">
+        <img src="assets/logo-2026.svg" alt="Hosting from the Heart" style="height: 46px; display: block;">
+      </a>
+      <nav class="hfth-nav" style="display: flex; align-items: center; gap: 34px; min-width: 0; flex-wrap: wrap; justify-content: center;">
+        <button onClick="{{ togglePortfolio }}" class="nav-link" style="background: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-800); padding: 0;">Portfolio <span style="font-size: 9px; color: var(--gold-600);">▼</span></button>
+        <button onClick="{{ toggleStory }}" class="nav-link" style="background: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-800); padding: 0;">Our Story <span style="font-size: 9px; color: var(--gold-600);">▼</span></button>
+        <a href="luxury-asset-lifestyle-management.html" class="nav-link" style="display: inline-flex; flex-direction: column; align-items: center; gap: 2px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; white-space: nowrap; line-height: 1;"><span>Luxury Asset &amp;</span><span>Lifestyle Management</span></a>
+        <a href="plan-your-experience.html" class="nav-link" style="display: inline-flex; flex-direction: column; align-items: center; gap: 2px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; white-space: nowrap; line-height: 1;"><span>Concierge</span><span style="font-size: 8.5px; font-weight: 600; letter-spacing: 0.18em; color: var(--gold-700);">Plan Your Experience</span></a>
+        <a href="contact.html" class="nav-link" style="font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; white-space: nowrap;">Contact</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 22px; flex: none;">
+        <a href="tel:720-399-5136" class="hfth-phone" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--forest-700); text-decoration: none;">
+          <span style="color: var(--gold-600); display: inline-flex;"><x-import component-from-global-scope="Icons.Phone" hint-size="18px,18px" size="17"></x-import></span>
+          720.399.5136
+        </a>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Button" variant="primary" size="sm" href="portfolio.html" hint-size="auto,36px">Plan a Stay</x-import>
+        <button class="hfth-burger" onClick="{{ toggleMenu }}" aria-label="Menu" style="align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 8px; border: 1px solid var(--border-default); background: var(--white); color: var(--ink-800); cursor: pointer;"><x-import component-from-global-scope="Icons.Menu" hint-size="20px,20px" size="20"></x-import></button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <nav style="border-top: 1px solid var(--border-subtle); background: rgba(250,250,248,0.98); padding: 18px 22px 26px; display: flex; flex-direction: column; gap: 2px;">
+        <a href="portfolio.html" style="font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border-subtle);">Portfolio</a>
+        <a href="premier-collection.html" style="font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); text-decoration: none; padding: 10px 0 10px 14px; border-bottom: 1px solid var(--border-subtle);">Premier Collection</a>
+        <a href="boutique-collection.html" style="font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); text-decoration: none; padding: 10px 0 10px 14px; border-bottom: 1px solid var(--border-subtle);">Boutique Collection</a>
+        <a href="our-story.html" style="font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border-subtle);">Our Story</a>
+        <a href="journal.html" style="font-family: var(--font-sans); font-size: 13px; color: var(--text-muted); text-decoration: none; padding: 10px 0 10px 14px; border-bottom: 1px solid var(--border-subtle);">HFTH Journal</a>
+        <a href="luxury-asset-lifestyle-management.html" style="font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border-subtle);">Luxury Asset &amp; Lifestyle Management</a>
+        <a href="plan-your-experience.html" style="font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border-subtle);">Concierge &mdash; Plan Your Experience</a>
+        <a href="contact.html" style="font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-800); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border-subtle);">Contact</a>
+        <a href="tel:720-399-5136" style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--forest-700); text-decoration: none; padding: 14px 0 0;"><span style="color: var(--gold-600); display: inline-flex;"><x-import component-from-global-scope="Icons.Phone" hint-size="16px,16px" size="16"></x-import></span>720.399.5136</a>
+      </nav>
+    </sc-if>
+
+
+    <!-- Our Story dropdown -->
+    <sc-if value="{{ storyOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top: 1px solid var(--border-subtle); background: rgba(250,250,248,0.98); backdrop-filter: blur(12px);">
+        <div style="max-width: 1280px; margin: 0 auto; padding: 30px 40px 36px; display: flex; gap: 56px; flex-wrap: wrap;">
+          <a href="our-story.html" style="display: block; text-decoration: none; max-width: 320px;">
+            <div class="hfth-titlecaps" style="font-size: 21px;">Our Story</div>
+            <div style="font-family: var(--font-serif); font-size: 14px; color: var(--text-muted); margin-top: 2px;">From the sea to the summit &mdash; the family behind HFTH.</div>
+          </a>
+          <a href="journal.html" style="display: block; text-decoration: none; max-width: 320px;">
+            <div class="hfth-titlecaps" style="font-size: 21px;">HFTH Journal</div>
+            <div style="font-family: var(--font-serif); font-size: 14px; color: var(--text-muted); margin-top: 2px;">Stories and insights from our team.</div>
+          </a>
+        </div>
+      </div>
+    </sc-if>
+    <!-- Portfolio mega-menu -->
+    <sc-if value="{{ portfolioOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top: 1px solid var(--border-subtle); background: rgba(250,250,248,0.98); backdrop-filter: blur(12px);">
+        <div class="hfth-mega" style="max-width: 1280px; margin: 0 auto; padding: 30px 40px 36px; display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 40px;">
+          <div>
+            <p style="margin: 0 0 16px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-700);">Collections</p>
+            <a href="portfolio.html" style="display: block; text-decoration: none; margin-bottom: 16px;">
+              <div class="hfth-titlecaps" style="font-size: 21px;">The Full Portfolio</div>
+              <div style="font-family: var(--font-serif); font-size: 14px; color: var(--text-muted); margin-top: 2px;">All 34 homes across Summit County and beyond.</div>
+            </a>
+            <a href="premier-collection.html" style="display: block; text-decoration: none; margin-bottom: 16px;">
+              <div class="hfth-titlecaps" style="font-size: 21px;">Premier Collection</div>
+              <div style="font-family: var(--font-serif); font-size: 14px; color: var(--text-muted); margin-top: 2px;">Custom luxury homes, five-star amenities, bespoke concierge.</div>
+            </a>
+            <a href="boutique-collection.html" style="display: block; text-decoration: none;">
+              <div class="hfth-titlecaps" style="font-size: 21px;">Boutique Collection</div>
+              <div style="font-family: var(--font-serif); font-size: 14px; color: var(--text-muted); margin-top: 2px;">Distinctly designed homes in prime locations.</div>
+            </a>
+          </div>
+          <div>
+            <p style="margin: 0 0 16px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-700);">By Region</p>
+            <sc-for list="{{ regions }}" as="r" hint-placeholder-count="5">
+              <a href="{{ r.href }}" style="display: block; font-family: var(--font-sans); font-size: 14px; color: var(--ink-800); text-decoration: none; padding: 7px 0;">{{ r.name }}</a>
+            </sc-for>
+          </div>
+          <div>
+            <p style="margin: 0 0 16px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-700);">Ways to Explore</p>
+            <a href="listings-by-name.html" style="display: block; font-family: var(--font-sans); font-size: 14px; color: var(--ink-800); text-decoration: none; padding: 7px 0;">Listings by Name</a>
+            <a href="ski-in-ski-out-homes.html" style="display: block; font-family: var(--font-sans); font-size: 14px; color: var(--ink-800); text-decoration: none; padding: 7px 0;">Ski-In / Ski-Out Homes</a>
+            <a href="pet-friendly-homes.html" style="display: block; font-family: var(--font-sans); font-size: 14px; color: var(--ink-800); text-decoration: none; padding: 7px 0;">Pet-Friendly Homes</a>
+            <a href="portfolio.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-800); text-decoration: none;">View Full Portfolio <x-import component-from-global-scope="Icons.ArrowRight" hint-size="15px,15px" size="15"></x-import></a>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  </header>
+
+  <section id="top" data-screen-label="Cover" style="position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden;">
+    <img src="assets/photos/sol-hero.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(95deg, rgba(18,22,28,0.8) 0%, rgba(18,22,28,0.56) 38%, rgba(18,22,28,0.22) 66%, rgba(18,22,28,0.05) 100%), linear-gradient(180deg, rgba(18,22,28,0.45) 0%, rgba(18,22,28,0) 24%);"></div>
+    <div style="position: relative; max-width: 1280px; width: 100%; margin: 0 auto; padding: 120px 44px 0;">
+      <div style="max-width: 760px;">
+        <p style="margin: 0; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold-300);">Luxury Asset &amp; Lifestyle Management</p>
+        <h1 style="font-family: var(--font-display); font-weight: 600; font-size: clamp(46px, 6vw, 82px); line-height: 1.04; letter-spacing: -0.01em; color: var(--cream-50); margin: 26px 0 0;">Redefining ownership.<br>Preserving legacy.<br><span style="color: var(--gold-300);">Curating lifestyle.</span></h1>
+        <p style="font-family: var(--font-serif); font-size: clamp(19px, 2vw, 23px); line-height: 1.6; color: rgba(245,240,232,0.9); margin: 28px 0 0; max-width: 580px;">Experience a new standard in luxury home stewardship — an invitation-only program crafted for Summit County’s most distinguished residences.</p>
+        <div style="display: flex; gap: 16px; margin-top: 38px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Button" variant="primary" size="lg" sc-camel-on-click="{{ goEngage }}" style="color: var(--spruce-700);" hint-size="auto,54px">Request a Private Consultation</x-import>
+          <span sc-camel-on-click="{{ goStandard }}" style="display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--cream-50); padding: 16px 34px; border-radius: var(--radius-sm); cursor: pointer; transition: background .3s ease, border-color .3s ease;" style-hover="background: var(--cream-200); border-color: var(--cream-200);">Discover the Program</span>
+        </div>
+      </div>
+    </div>
+    <div style="position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      
+      <span style="width: 1px; height: 34px; background: linear-gradient(rgba(245,240,232,0.6), rgba(245,240,232,0));"></span>
+    </div>
+  </section>
+
+  <section id="standard" data-screen-label="A New Standard" style="background: var(--bg-page); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 6vw, 88px); align-items: center;">
+      <div>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="Introducing" title="A New Standard in Luxury Home Stewardship" hint-size="100%,auto"></x-import>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.72; color: var(--text-muted); margin: 26px 0 0;">In a landscape where exceptional homes deserve exceptional care, Hosting from the Heart proudly introduces its Luxury Asset &amp; Lifestyle Management Division — an elite, invitation-only program crafted for the most discerning homeowners in Summit County.</p>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.72; color: var(--text-muted); margin: 18px 0 0;">This exclusive offering is limited to a select portfolio of homes that embody architectural distinction, refined craftsmanship, and timeless design. Each property becomes part of a curated collection — managed with the precision of an estate manager, the warmth of a five-star host, and the foresight of a trusted financial advisor.</p>
+        <p style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.015em; font-size: 25px; line-height: 1.4; color: var(--ink-900); margin: 30px 0 0;">We don’t simply manage homes — we curate experiences, preserve legacies, and protect value.</p>
+      </div>
+      <div style="position: relative;">
+        <img src="assets/lalm/6e47bcf6.jpg" alt="HFTH Luxury Asset and Lifestyle Management signage" style="width: 100%; height: 480px; object-fit: contain; object-position: center; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: block; background: #14110e;">
+        <div style="position: absolute; left: -26px; bottom: 36px; background: var(--white); padding: 20px 26px; border-radius: var(--radius-md); box-shadow: var(--shadow-xl); border: 1px solid var(--border-subtle); max-width: 230px;">
+          <span style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);">By Invitation Only</span>
+          <p style="font-family: var(--font-serif); font-style: italic; font-size: 15.5px; line-height: 1.5; color: var(--text-body); margin: 8px 0 0;">A curated collection, managed as a private estate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promise" data-screen-label="The Promise" style="background: var(--cream-100); padding: clamp(80px, 11vw, 132px) 44px; border-top: 1px solid var(--border-subtle);">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 80px); align-items: center;">
+        <div style="position: relative; order: 1;">
+          <img src="assets/lalm/e771e767.png" alt="" style="width: 100%; height: 460px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: block;">
+        </div>
+        <div style="order: 2;">
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="The HFTH Promise" title="Ownership, Made Effortless" hint-size="100%,auto"></x-import>
+          <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.72; color: var(--text-muted); margin: 26px 0 0;">Owning a luxury mountain retreat should feel effortless. Our mission is to transform ownership into a seamless, rewarding, and worry-free experience — where every arrival feels like a private five-star escape, and every detail reflects the highest standard of hospitality and operational care.</p>
+        </div>
+      </div>
+      <div style="margin-top: clamp(48px, 6vw, 76px);">
+        <p style="font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-align: center; margin: 0 0 36px;">A comprehensive, heart-centered approach</p>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px;">
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.FeatureItem" title="Professional Home &amp; Asset Management" hint-size="100%,auto">Your residence overseen with the diligence of a private estate.</x-import>
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.FeatureItem" title="Luxury Hospitality &amp; Concierge" hint-size="100%,auto">Five-star hosting and bespoke concierge for owners and guests alike.</x-import>
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.FeatureItem" title="Strategic Rental Operations" hint-size="100%,auto">Premium short and mid-term income, with your personal use always protected.</x-import>
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.FeatureItem" title="Financial Transparency" hint-size="100%,auto">Clear reporting and disciplined operations you can always trust.</x-import>
+        </div>
+      </div>
+      <p style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.015em; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.4; color: var(--ink-900); text-align: center; max-width: 880px; margin: clamp(48px, 6vw, 72px) auto 0;">Each home is treated as an individual masterpiece — cared for, protected, and optimized with the diligence of a private estate or family office asset.</p>
+    </div>
+  </section>
+
+  <section id="values" data-screen-label="Core Values" style="background: var(--ink-900); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="What We Stand For" title="Our Core Values" tone="onDark" align="center" intro="Six principles guide every decision we make — and every home we are entrusted to care for." hint-size="100%,auto"></x-import>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: clamp(44px, 5vw, 64px); background: var(--border-onDark); border: 1px solid var(--border-onDark); border-radius: var(--radius-md); overflow: hidden;">
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">01</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Hospitality Excellence</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">Exceptional experiences that exceed expectations and leave a lasting impression on every guest and owner.</p>
+        </div>
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">02</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Integrity &amp; Transparency</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">Honesty, trust, and open communication form the foundation of every relationship we build.</p>
+        </div>
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">03</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Homeowner Partnership</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">We care for your property with the same dedication and respect as we would our own home.</p>
+        </div>
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">04</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Guest-Centric Approach</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">Guests are at the heart of all we do — we anticipate their needs to craft unforgettable, personalized stays.</p>
+        </div>
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">05</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Team &amp; Vendor Care</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">We nurture and support our team members and trusted vendors, fostering growth, collaboration, and excellence.</p>
+        </div>
+        <div style="background: var(--ink-900); padding: 34px 30px;">
+          <span style="font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold-300); line-height: 1;">06</span>
+          <h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 23px; color: var(--cream-50); margin: 14px 0 0;">Community Engagement</h4>
+          <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.6; color: var(--text-on-dark-muted); margin: 10px 0 0;">We invest in and support the Summit County communities we are proud to call home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" data-screen-label="Our Clients" style="background: var(--bg-page); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="Whom We Serve" title="Our Platinum Clientele" align="center" intro="For each, HFTH becomes both guardian and host — ensuring the home is both protected and alive with warmth, readiness, and beauty." hint-size="100%,auto"></x-import>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: clamp(44px, 5vw, 64px); align-items: stretch;">
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Card" variant="surface" padding="30px" style="height: 100%; display: flex; flex-direction: column;" hint-size="100%,480px">
+          <div style="height: 230px; overflow: hidden; margin: -30px -30px 24px;"><img src="assets/lalm/edb0cadd.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+          <span style="display: inline-block; font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); background: var(--gold-100); padding: 5px 12px; border-radius: 999px; align-self: flex-start;">Platinum Client 01</span>
+          <h3 class="hfth-titlecaps" style="font-size: 26px; margin: 16px 0 0; color: var(--ink-900);">Second-Home Owners</h3>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0;">Luxury second-home owners who want their mountain retreat impeccably cared for year-round. They arrive to a residence that is pristine, fully provisioned, and ready — and rest easy knowing their home enjoys complete privacy and attentive oversight in their absence.</p>
+        </x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Card" variant="surface" padding="30px" style="height: 100%; display: flex; flex-direction: column;" hint-size="100%,480px">
+          <div style="height: 230px; overflow: hidden; margin: -30px -30px 24px;"><img src="assets/lalm/dd56551b.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+          <span style="display: inline-block; font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); background: var(--gold-100); padding: 5px 12px; border-radius: 999px; align-self: flex-start;">Platinum Client 02</span>
+          <h3 class="hfth-titlecaps" style="font-size: 26px; margin: 16px 0 0; color: var(--ink-900);">Discerning Investors</h3>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0;">Investors seeking premium, optimized rental income while preserving full personal use. We pair disciplined revenue management and fully transparent reporting with the freedom for owners to enjoy their home whenever they wish — performance and lifestyle, always in harmony.</p>
+        </x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Card" variant="surface" padding="30px" style="height: 100%; display: flex; flex-direction: column;" hint-size="100%,480px">
+          <div style="height: 230px; overflow: hidden; margin: -30px -30px 24px;"><img src="assets/lalm/f94b88d7.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; object-position: center;"></div>
+          <span style="display: inline-block; font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); background: var(--gold-100); padding: 5px 12px; border-radius: 999px; align-self: flex-start;">Platinum Client 03</span>
+          <h3 class="hfth-titlecaps" style="font-size: 26px; margin: 16px 0 0; color: var(--ink-900);">Legacy Families</h3>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0;">Families who regard their home as a lasting legacy and want a single, trusted partner to steward every detail. We preserve the value, beauty, and character of the residence — protecting the place where memories are made for generations to come.</p>
+        </x-import>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-screen-label="The Experience" style="background: var(--ink-900); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1fr 0.92fr; gap: clamp(40px, 6vw, 80px); align-items: center;">
+        <div>
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="The HFTH Experience" title="A Guest in Your Own Home" tone="onDark" intro="We believe every homeowner should feel like a VIP guest in their own residence. Our bespoke service offering is curated, discreet, and endlessly attentive." hint-size="100%,auto"></x-import>
+        </div>
+        <div style="position: relative;">
+          <img src="assets/lalm/3f35926f.png" alt="" style="width: 100%; height: 380px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-xl); display: block;">
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(40px, 5vw, 72px); margin-top: clamp(40px, 5vw, 60px);">
+        <div style="display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--border-onDark);">
+          <span style="font-family: var(--font-display); font-size: 32px; color: var(--gold-300); line-height: 1; min-width: 42px;">01</span>
+          <div><h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 22px; color: var(--cream-50); margin: 0;">Pre-Arrival Readiness</h4><p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.62; color: var(--text-on-dark-muted); margin: 8px 0 0;">Climate set, lights on, pantry stocked, fireplaces laid, and linens pressed — every comfort attended to before you arrive.</p></div>
+        </div>
+        <div style="display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--border-onDark);">
+          <span style="font-family: var(--font-display); font-size: 32px; color: var(--gold-300); line-height: 1; min-width: 42px;">02</span>
+          <div><h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 22px; color: var(--cream-50); margin: 0;">Lifestyle Concierge</h4><p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.62; color: var(--text-on-dark-muted); margin: 8px 0 0;">Chef services, in-residence spa, private trainers, childcare, and entertainment — curated through our trusted premium network.</p></div>
+        </div>
+        <div style="display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--border-onDark);">
+          <span style="font-family: var(--font-display); font-size: 32px; color: var(--gold-300); line-height: 1; min-width: 42px;">03</span>
+          <div><h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 22px; color: var(--cream-50); margin: 0;">Transportation &amp; Logistics</h4><p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.62; color: var(--text-on-dark-muted); margin: 8px 0 0;">Private transfers, vehicle care, valet storage, and airport coordination for seamless arrivals and departures.</p></div>
+        </div>
+        <div style="display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--border-onDark);">
+          <span style="font-family: var(--font-display); font-size: 32px; color: var(--gold-300); line-height: 1; min-width: 42px;">04</span>
+          <div><h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 22px; color: var(--cream-50); margin: 0;">Housekeeping &amp; Support</h4><p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.62; color: var(--text-on-dark-muted); margin: 8px 0 0;">Discreet, hotel-grade housekeeping and on-call property assistance, so you and your guests simply relax and enjoy.</p></div>
+        </div>
+        <div style="display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--border-onDark); border-bottom: 1px solid var(--border-onDark);">
+          <span style="font-family: var(--font-display); font-size: 32px; color: var(--gold-300); line-height: 1; min-width: 42px;">05</span>
+          <div><h4 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-size: 22px; color: var(--cream-50); margin: 0;">Personalized Experiences</h4><p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.62; color: var(--text-on-dark-muted); margin: 8px 0 0;">Wine tastings, wellness sessions, private dining, and guided outdoor adventures — warmth and precision, combined.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="protection" data-screen-label="Asset Protection" style="background: var(--bg-page); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 0.92fr 1.08fr; gap: clamp(40px, 6vw, 80px); align-items: center;">
+      <div style="position: relative;">
+        <img src="assets/lalm/f6db1fd9.png" alt="" style="width: 100%; height: 540px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: block;">
+      </div>
+      <div>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="The Asset Protection Plan" title="Safeguarded as Our Own" hint-size="100%,auto"></x-import>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.7; color: var(--text-muted); margin: 24px 0 0;">Every HFTH partnership begins with a deep understanding of your property as both a residence and an asset. Our Asset Protection Plan ensures longevity, safety, and performance through:</p>
+        <ul style="list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px;">
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">Comprehensive home inspection and systems evaluation</span></li>
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">Preventative maintenance scheduling and oversight</span></li>
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">Detailed vendor management and performance tracking</span></li>
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">24/7 emergency response and incident reporting</span></li>
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">Annual property condition and capital forecast report</span></li>
+          <li style="display: flex; gap: 13px; align-items: flex-start;"><span style="width: 7px; height: 7px; border-radius: 999px; background: var(--gold-500); margin-top: 9px; flex: none;"></span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.5; color: var(--text-body);">Full compliance review for insurance, safety, and regulations</span></li>
+        </ul>
+        <p style="font-family: var(--font-serif); font-style: italic; font-size: 17.5px; line-height: 1.6; color: var(--text-accent); margin: 28px 0 0;">We operate with absolute accountability — safeguarding your home as if it were our own.</p>
+        <div style="margin-top: 26px; background: var(--gold-100); border: 1px solid var(--gold-200); border-radius: var(--radius-md); padding: 22px 24px; display: flex; gap: 18px; align-items: flex-start;">
+          <span style="font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--gold-700); line-height: 1; flex: none;">100%</span>
+          <div>
+            <div style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-700);">Asset Protection Guarantee</div>
+            <p style="font-family: var(--font-serif); font-size: 15.5px; line-height: 1.55; color: var(--ink-800); margin: 7px 0 0;">Full asset-protection insurance shields every homeowner from damage, replacement costs, or loss — paired with transparent financial reporting delivered by the fifteenth of every month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" data-screen-label="Personalized Approach" style="background: var(--cream-100); padding: clamp(80px, 11vw, 132px) 44px; border-top: 1px solid var(--border-subtle);">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1.08fr 0.92fr; gap: clamp(40px, 6vw, 80px); align-items: center;">
+      <div>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="A Personalized Approach" title="A Plan as Singular as Your Home" hint-size="100%,auto"></x-import>
+        <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.7; color: var(--text-muted); margin: 24px 0 0;">Because every property, and every owner, is unique, HFTH develops a personalized Luxury Asset &amp; Lifestyle Plan for each home. Our process includes:</p>
+        <ol style="list-style: none; margin: 26px 0 0; padding: 0; counter-reset: step; display: flex; flex-direction: column; gap: 18px;">
+          <li style="display: flex; gap: 16px; align-items: flex-start;"><span style="font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--accent); line-height: 1.2; min-width: 30px;">I</span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.55; color: var(--text-body);">A comprehensive home inspection and operational analysis.</span></li>
+          <li style="display: flex; gap: 16px; align-items: flex-start;"><span style="font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--accent); line-height: 1.2; min-width: 30px;">II</span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.55; color: var(--text-body);">A detailed lifestyle questionnaire to understand preferences, travel patterns, and your desired level of involvement.</span></li>
+          <li style="display: flex; gap: 16px; align-items: flex-start;"><span style="font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--accent); line-height: 1.2; min-width: 30px;">III</span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.55; color: var(--text-body);">Creation of a customized management and lifestyle plan.</span></li>
+          <li style="display: flex; gap: 16px; align-items: flex-start;"><span style="font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--accent); line-height: 1.2; min-width: 30px;">IV</span><span style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.55; color: var(--text-body);">A tailored revenue projection and operating cost analysis for rental potential.</span></li>
+        </ol>
+        <p style="font-family: var(--font-serif); font-style: italic; font-size: 17.5px; line-height: 1.6; color: var(--text-accent); margin: 28px 0 0;">Every recommendation is aligned with your vision, lifestyle, and financial objectives.</p>
+      </div>
+      <div style="position: relative;">
+        <img src="assets/lalm/bb57ee92.png" alt="" style="width: 100%; height: 540px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: block;">
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise" data-screen-label="Stewardship" style="background: var(--bg-page); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 6vw, 80px); align-items: center;">
+        <div>
+          <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="Experts in Luxury Asset Management" title="A Pedigree of Stewardship" hint-size="100%,auto"></x-import>
+          <p style="font-family: var(--font-serif); font-size: 18px; line-height: 1.72; color: var(--text-muted); margin: 24px 0 0;">Entrusting an extraordinary property to a management partner requires confidence. Founders Thomas and Tina Barry combine over three decades of high-net-worth asset management with refined hospitality expertise — supported by a seasoned team carrying more than forty years of luxury-hotel mastery.</p>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.65; color: var(--text-body); margin: 20px 0 0;"><strong style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-weight: 600; font-size: 19px; color: var(--ink-900);">Thomas Barry, CEO &amp; Founder</strong><br>A former estate manager of 250,000-plus square feet of luxury homes across nine states, luxury yacht captain, and leader of teams of fifty-plus private service staff — instilling meticulous standards of service, safety, and discretion.</p>
+        </div>
+        <div style="position: relative;">
+          <img src="assets/lalm/c2b48197.jpg" alt="" style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); display: block;">
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: clamp(48px, 6vw, 72px); padding-top: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border-subtle);">
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="30+" label="Years Combined" sublabel="HNW asset management &amp; hospitality" align="center" hint-size="100%,auto"></x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="250K" label="Sq Ft Managed" sublabel="Luxury estates across nine states" align="center" hint-size="100%,auto"></x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="85K+" label="Nautical Miles" sublabel="As a luxury yacht captain" align="center" hint-size="100%,auto"></x-import>
+      </div>
+    </div>
+  </section>
+
+  <section id="exclusivity" data-screen-label="Exclusivity" style="position: relative; min-height: 88vh; display: flex; align-items: center; overflow: hidden;">
+    <img src="assets/lalm/6e349fc7.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(22,20,18,0.74) 0%, rgba(22,20,18,0.5) 45%, rgba(22,20,18,0.78) 100%);"></div>
+    <div style="position: relative; max-width: 880px; margin: 0 auto; padding: 96px 44px; text-align: center;">
+      <p style="margin: 0; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-300);">Exclusivity &amp; Availability</p>
+      <h2 style="font-family: var(--font-display); font-variant: small-caps; letter-spacing: 0.02em; font-weight: 600; font-size: clamp(40px, 5.2vw, 66px); line-height: 1.08; color: var(--cream-50); margin: 22px 0 0;">A Limited Number of Homes</h2>
+      <hr style="border: 0; height: 2px; width: 64px; background: var(--gold-300); margin: 26px auto 0; border-radius: 2px;">
+      <p style="font-family: var(--font-serif); font-size: clamp(18px, 2vw, 21px); line-height: 1.68; color: rgba(245,240,232,0.9); margin: 30px auto 0; max-width: 720px;">To maintain the highest level of attention and service, we accept only a limited number of Luxury Asset &amp; Lifestyle Management clients each year — dedicating our full focus, resources, and team expertise to each estate in our care.</p>
+      <p style="font-family: var(--font-serif); font-style: italic; font-size: clamp(19px, 2.1vw, 23px); line-height: 1.55; color: var(--gold-200); margin: 26px auto 0; max-width: 720px;">We are currently inviting select homeowners to join this next chapter — a rare opportunity to experience world-class hospitality and property management, redefined.</p>
+      <div style="display: flex; justify-content: center; margin-top: 38px;">
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.Button" variant="primary" size="lg" sc-camel-on-click="{{ goEngage }}" style="color: var(--spruce-700);" hint-size="auto,54px">Request a Private Consultation</x-import>
+      </div>
+    </div>
+  </section>
+
+  <section id="difference" data-screen-label="The Difference" style="background: var(--ink-900); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1140px; margin: 0 auto;">
+      <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="The HFTH Difference" title="Why Owners Choose Us" tone="onDark" align="center" intro="A proven record of trust, transparency, and exceptional results — delivered with precision, professionalism, and genuine heart." hint-size="100%,auto"></x-import>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: clamp(48px, 6vw, 72px);">
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="#1" label="In Colorado" sublabel="Boutique luxury host on Airbnb" tone="onDark" align="center" hint-size="100%,auto"></x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="#1" label="In the U.S." sublabel="Top-ranked property manager by Comparent" tone="onDark" align="center" hint-size="100%,auto"></x-import>
+        <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.StatBlock" value="5.0" label="Owner Rated" sublabel="Across verified owner reviews" tone="onDark" align="center" hint-size="100%,auto"></x-import>
+      </div>
+      <div style="text-align: center; margin-top: clamp(28px, 3vw, 38px);">
+        <a href="https://comparent.com/top-vacation-rental-management-companies/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-sans); font-size: 11.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-300); text-decoration: none; border-bottom: 1px solid rgba(201,162,90,0.4); padding-bottom: 4px;">View the National Ranking on Comparent &nbsp;→</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: clamp(52px, 6vw, 76px);">
+        <figure style="margin: 0; background: rgba(245,240,232,0.04); border: 1px solid var(--border-onDark); border-radius: var(--radius-md); padding: 30px;">
+          <span style="font-family: var(--font-display); font-size: 50px; line-height: 0.2; color: var(--gold-300); display: block; height: 26px;" aria-hidden="true">“</span>
+          <blockquote style="margin: 0; font-family: var(--font-serif); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--cream-50);">They are luxury hospitality experts, strategic partners, and genuine stewards of your home.</blockquote>
+          <figcaption style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-300); margin-top: 18px;">Zach Lemaster<span style="display: block; color: var(--text-on-dark-muted); font-weight: 500; letter-spacing: 0.08em; margin-top: 4px;">Homeowner</span></figcaption>
+        </figure>
+        <figure style="margin: 0; background: rgba(245,240,232,0.04); border: 1px solid var(--border-onDark); border-radius: var(--radius-md); padding: 30px;">
+          <span style="font-family: var(--font-display); font-size: 50px; line-height: 0.2; color: var(--gold-300); display: block; height: 26px;" aria-hidden="true">“</span>
+          <blockquote style="margin: 0; font-family: var(--font-serif); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--cream-50);">Hosting from the Heart sets the gold standard — truly the platinum standard — for short-term rental management.</blockquote>
+          <figcaption style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-300); margin-top: 18px;">Kelly D.<span style="display: block; color: var(--text-on-dark-muted); font-weight: 500; letter-spacing: 0.08em; margin-top: 4px;">Homeowner</span></figcaption>
+        </figure>
+        <figure style="margin: 0; background: rgba(245,240,232,0.04); border: 1px solid var(--border-onDark); border-radius: var(--radius-md); padding: 30px;">
+          <span style="font-family: var(--font-display); font-size: 50px; line-height: 0.2; color: var(--gold-300); display: block; height: 26px;" aria-hidden="true">“</span>
+          <blockquote style="margin: 0; font-family: var(--font-serif); font-style: italic; font-size: 17px; line-height: 1.6; color: var(--cream-50);">Hands-on, thoughtful, and strategic — they treat my property like both a thriving business and a cherished home.</blockquote>
+          <figcaption style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-300); margin-top: 18px;">Bradford Peterson<span style="display: block; color: var(--text-on-dark-muted); font-weight: 500; letter-spacing: 0.08em; margin-top: 4px;">Homeowner</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps" data-screen-label="Next Steps" style="background: var(--bg-page); padding: clamp(80px, 11vw, 132px) 44px;">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="Next Steps" title="How We Begin" align="center" intro="A considered, four-step path from first conversation to a tailored plan for your home." hint-size="100%,auto"></x-import>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: clamp(48px, 6vw, 68px);">
+        <div style="border-top: 2px solid var(--gold-500); padding-top: 22px;">
+          <span style="font-family: var(--font-display); font-size: 40px; font-weight: 600; color: var(--gold-400); line-height: 1;">01</span>
+          <h4 class="hfth-titlecaps" style="font-size: 21px; color: var(--ink-900); margin: 14px 0 0;">Private Consultation</h4>
+          <p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.58; color: var(--text-muted); margin: 10px 0 0;">Meet with our leadership team to discuss your goals and priorities.</p>
+        </div>
+        <div style="border-top: 2px solid var(--gold-500); padding-top: 22px;">
+          <span style="font-family: var(--font-display); font-size: 40px; font-weight: 600; color: var(--gold-400); line-height: 1;">02</span>
+          <h4 class="hfth-titlecaps" style="font-size: 21px; color: var(--ink-900); margin: 14px 0 0;">Property Evaluation</h4>
+          <p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.58; color: var(--text-muted); margin: 10px 0 0;">We perform an on-site inspection and full operational assessment.</p>
+        </div>
+        <div style="border-top: 2px solid var(--gold-500); padding-top: 22px;">
+          <span style="font-family: var(--font-display); font-size: 40px; font-weight: 600; color: var(--gold-400); line-height: 1;">03</span>
+          <h4 class="hfth-titlecaps" style="font-size: 21px; color: var(--ink-900); margin: 14px 0 0;">Lifestyle Discovery</h4>
+          <p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.58; color: var(--text-muted); margin: 10px 0 0;">Our team learns your preferences and ideal ownership experience.</p>
+        </div>
+        <div style="border-top: 2px solid var(--gold-500); padding-top: 22px;">
+          <span style="font-family: var(--font-display); font-size: 40px; font-weight: 600; color: var(--gold-400); line-height: 1;">04</span>
+          <h4 class="hfth-titlecaps" style="font-size: 21px; color: var(--ink-900); margin: 14px 0 0;">Custom Proposal</h4>
+          <p style="font-family: var(--font-serif); font-size: 16px; line-height: 1.58; color: var(--text-muted); margin: 10px 0 0;">A personalized plan with revenue projections, cost analysis, and service model.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="engage" data-screen-label="Begin" style="background: var(--cream-100); padding: clamp(80px, 11vw, 132px) 44px; border-top: 1px solid var(--border-subtle);">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <x-import component-from-global-scope="HostingFromTheHeartDesignSystem_0547af.SectionHeading" eyebrow="Begin the Conversation" title="Explore Your Opportunity" align="center" intro="Whether you already own an exceptional home or are preparing to acquire one, now is the perfect time to partner with HFTH. Tell us a little about your property or your goals, and we will be in touch personally." hint-size="100%,auto"></x-import>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: clamp(44px, 5vw, 64px); align-items: start;">
+
+        <div data-capture="" style="background: var(--white); border: 1px solid var(--border-subtle); border-top: 3px solid var(--gold-500); border-radius: var(--radius-md); padding: clamp(28px, 3vw, 40px); box-shadow: var(--shadow-sm);">
+          <span style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);">For Current Owners</span>
+          <h3 class="hfth-titlecaps" style="font-size: clamp(24px, 2.4vw, 30px); color: var(--ink-900); margin: 12px 0 0;">Request Your Property Review</h3>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0;">We will perform a complimentary, comprehensive review of your property — assessing its potential, positioning, and revenue opportunity — then reach out personally to book your private discovery call.</p>
+          <form sc-camel-on-submit="{{ submitOwner }}" style="margin-top: 26px;">
+            <div style="margin-bottom: 16px;">
+              <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Full Name</label>
+              <input name="name" type="text" required="" placeholder="Your name" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Email</label>
+                <input name="email" type="email" required="" placeholder="you@email.com" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+              </div>
+              <div>
+                <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Phone</label>
+                <input name="phone" type="tel" placeholder="(000) 000-0000" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+              </div>
+            </div>
+            <div style="margin-bottom: 22px;">
+              <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Property Address</label>
+              <input name="propertyAddress" type="text" required="" placeholder="Street, city, state" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+            </div>
+            <button type="submit" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream-50); background: var(--gold-500); border: 1px solid var(--gold-500); padding: 16px 28px; border-radius: var(--radius-sm); cursor: pointer; transition: background .3s ease, border-color .3s ease;" style-hover="background: var(--gold-600); border-color: var(--gold-600);">Request My Property Review</button>
+          </form>
+          <div data-success="" style="display: none; margin-top: 26px; background: var(--gold-100); border: 1px solid var(--gold-200); border-radius: var(--radius-md); padding: 26px;">
+            <div style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-700);">Thank You</div>
+            <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.6; color: var(--ink-800); margin: 8px 0 0;">Your request has been received. Our team will complete a comprehensive review of your property and reach out personally to schedule your discovery call.</p>
+          </div>
+        </div>
+
+        <div data-capture="" style="background: var(--white); border: 1px solid var(--border-subtle); border-top: 3px solid var(--spruce-600); border-radius: var(--radius-md); padding: clamp(28px, 3vw, 40px); box-shadow: var(--shadow-sm);">
+          <span style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent);">For Prospective Investors</span>
+          <h3 class="hfth-titlecaps" style="font-size: clamp(24px, 2.4vw, 30px); color: var(--ink-900); margin: 12px 0 0;">Acquire &amp; Onboard with HFTH</h3>
+          <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.62; color: var(--text-muted); margin: 12px 0 0;">Planning to add a new investment property? This is the ideal moment to engage HFTH. We work in tandem with your broker to identify the top-performing homes in our market — and guide you through purchase and onboarding to set you up for success from day one.</p>
+          <form sc-camel-on-submit="{{ submitInvestor }}" style="margin-top: 26px;">
+            <div style="margin-bottom: 16px;">
+              <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Full Name</label>
+              <input name="name" type="text" required="" placeholder="Your name" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <div>
+                <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Email</label>
+                <input name="email" type="email" required="" placeholder="you@email.com" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+              </div>
+              <div>
+                <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Phone</label>
+                <input name="phone" type="tel" placeholder="(000) 000-0000" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+              </div>
+            </div>
+            <div style="margin-bottom: 22px;">
+              <label style="font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 7px;">Target Market &amp; Budget</label>
+              <input name="targetMarket" type="text" placeholder="e.g. Breckenridge · $2–3M" style="width: 100%; padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--ink-900); background: var(--cream-50); border: 1px solid var(--border-default); border-radius: var(--radius-sm); outline: none;">
+            </div>
+            <button type="submit" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream-50); background: var(--spruce-600); border: 1px solid var(--spruce-600); padding: 16px 28px; border-radius: var(--radius-sm); cursor: pointer; transition: background .3s ease, border-color .3s ease;" style-hover="background: var(--ink-900); border-color: var(--spruce-700);">Start My Investment Strategy</button>
+          </form>
+          <div data-success="" style="display: none; margin-top: 26px; background: var(--gold-100); border: 1px solid var(--gold-200); border-radius: var(--radius-md); padding: 26px;">
+            <div style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-700);">Thank You</div>
+            <p style="font-family: var(--font-serif); font-size: 16.5px; line-height: 1.6; color: var(--ink-800); margin: 8px 0 0;">Your inquiry has been received. We will connect with you and your broker to identify the strongest opportunities in our market and guide you from purchase through onboarding.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Founders &amp; Contact" style="background: var(--ink-900); padding: clamp(84px, 11vw, 140px) 44px;">
+    <div style="max-width: 880px; margin: 0 auto; text-align: center;">
+      <p style="margin: 0 0 28px; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold-300);">A Message from Our Founders</p>
+      <span style="font-family: var(--font-display); font-size: 64px; line-height: 0.4; color: var(--gold-300); display: block; height: 30px;" aria-hidden="true">“</span>
+      <blockquote style="margin: 0; font-family: var(--font-serif); font-style: italic; font-size: clamp(20px, 2.3vw, 27px); line-height: 1.55; color: var(--cream-50);">We built Hosting from the Heart to bring a sense of genuine care, warmth, and precision to luxury hospitality. With this new division, we extend that philosophy to serve our guests and owners alike. Our clients entrust us with their most meaningful spaces; in return, we treat those homes as sacred investments, family legacies, and places of joy.</blockquote>
+      <p style="font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-300); margin: 30px 0 0;">Thomas &amp; Tina Barry <span style="color: rgba(245,240,232,0.6); font-weight: 500;">· Founders</span></p>
+      <div style="height: 1px; width: 100%; max-width: 360px; background: var(--border-onDark); margin: 48px auto;"></div>
+      <p style="margin: 0; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-300);">Get in Touch</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px 28px; margin: 22px 0 0;">
+        <a id="hfth-email" href="#" style="font-family: var(--font-serif); font-size: 19px; color: var(--cream-50); text-decoration: none;">Email Our Team</a>
+        <span style="color: var(--gold-400);">·</span>
+        <a href="tel:13039135136" style="font-family: var(--font-serif); font-size: 19px; color: var(--cream-50); text-decoration: none;">303-913-5136</a>
+        <span style="color: var(--gold-400);">·</span>
+        <a href="https://www.hostingfromtheheart.com" target="_blank" rel="noopener" style="font-family: var(--font-serif); font-size: 19px; color: var(--cream-50); text-decoration: none;">hostingfromtheheart.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: var(--ink-900); color: rgba(243,242,238,0.8);">
+    <div class="hfth-foot" style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 40px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 48px;">
+      <div>
+        <div style="font-family: var(--font-display); font-weight: 600; font-variant: small-caps; letter-spacing: 0.04em; font-size: 26px; line-height: 1.1; color: #FCFAF6; margin-bottom: 22px;">Hosting<br>from the Heart</div>
+        <p style="margin: 0 0 20px; font-family: var(--font-serif); font-size: 16px; line-height: 1.65; color: rgba(243,242,238,0.72); max-width: 300px;">Colorado’s boutique collection of distinctive luxury vacation homes — hosted from the heart. <span style="color: var(--gold-400);">💛</span></p>
+        <div style="font-family: var(--font-sans); font-size: 13.5px; line-height: 1.7; color: rgba(243,242,238,0.7);">
+          124 Main Street, Dillon, Colorado 80435<br>
+          <a href="tel:720-399-5136" style="color: rgba(243,242,238,0.9); text-decoration: none;">720.399.5136</a> · <a href="mailto:guestservices@hfth.co" style="color: rgba(243,242,238,0.9); text-decoration: none;">guestservices@hfth.co</a>
+        </div>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-400);">Explore</p>
+        <a href="premier-collection.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Premier Collection</a>
+        <a href="boutique-collection.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Boutique Collection</a>
+        <a href="ski-in-ski-out-homes.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Ski-In / Ski-Out</a>
+        <a href="pet-friendly-homes.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Pet-Friendly Homes</a>
+        <a href="listings-by-name.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Listings by Name</a>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-400);">Company</p>
+        <a href="our-story.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Our Story</a>
+        <a href="luxury-asset-lifestyle-management.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Luxury Asset &amp; Lifestyle Management</a>
+        <a href="plan-your-experience.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Concierge &mdash; Plan Your Experience</a>
+            <a href="journal.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">HFTH Journal</a>
+        <a href="contact.html" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Contact Us</a>
+        <a href="https://ownerx.streamlinevrs.com/login" style="display: block; padding: 6px 0; font-family: var(--font-sans); font-size: 14px; color: rgba(243,242,238,0.78); text-decoration: none;">Owner Portal</a>
+      </div>
+      <div>
+        <p style="margin: 0 0 18px; font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-400);">Search by Name</p>
+        <select onChange="{{ onPickHome }}" style="appearance: none; -webkit-appearance: none; width: 100%; font-family: var(--font-sans); font-size: 14px; color: var(--forest-800); background: #FCFAF6; padding: 12px 14px; border-radius: 8px; border: 1px solid rgba(243,242,238,0.2); outline: none; cursor: pointer;">
+          <option value="">Find a home…</option>
+          <sc-for list="{{ allHomes }}" as="name" hint-placeholder-count="6">
+            <option value="{{ name }}">{{ name }}</option>
+          </sc-for>
+        </select>
+        <div style="display: flex; gap: 12px; margin-top: 22px;">
+          <a href="https://www.facebook.com/hostingfromtheheart" style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(243,242,238,0.25); display: flex; align-items: center; justify-content: center; color: rgba(243,242,238,0.85); text-decoration: none; font-family: var(--font-sans); font-size: 15px; font-weight: 600;">f</a>
+          <a href="https://linktr.ee/hostingfromtheheart" style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(243,242,238,0.25); display: flex; align-items: center; justify-content: center; color: rgba(243,242,238,0.85); text-decoration: none; font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.05em;">IG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust badges -->
+    <div style="background: #FCFAF6; border-top: 1px solid var(--border-subtle);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 36px 40px 32px;">
+        <p style="margin: 0 0 22px; text-align: center; font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-faint);">Recognized &amp; Trusted Across</p>
+        <div class="hfth-trustband" style="display: flex; align-items: stretch; justify-content: center; gap: 18px; flex-wrap: wrap;">
+          <div class="hfth-badgechip" style="height: 88px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px;"><img src="assets/badges/airbnb-luxe.png" alt="Airbnb Luxe · Superhost" style="height: 44px; width: auto; display: block;"></div>
+          <div class="hfth-badgechip" style="height: 88px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px;"><img src="assets/badges/vrbo-premier.png" alt="Vrbo Premier Host" style="height: 66px; width: auto; display: block;"></div>
+          <div class="hfth-badgechip" style="height: 88px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px;"><img src="assets/badges/marriott-hvmb.png" alt="Homes & Villas by Marriott Bonvoy" style="height: 70px; width: auto; display: block;"></div>
+          <div class="hfth-badgechip" style="height: 88px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px;"><img src="assets/badges/comparent.png" alt="Comparent Market Leader — #1 Property Manager in the U.S." style="height: 76px; width: auto; display: block;"></div>
+          <div class="hfth-badgechip" style="height: 88px; display: inline-flex; align-items: center; justify-content: center; padding: 0 30px;"><img src="assets/badges/google-5.png" alt="Google 5.0 · 149 Reviews" style="height: 56px; width: auto; display: block;"></div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(243,242,238,0.12);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 22px 40px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-family: var(--font-sans); font-size: 12.5px; color: rgba(243,242,238,0.55);">
+        <span>© 2026 Hosting From The Heart. All rights reserved.</span>
+        <span style="display: flex; gap: 20px;"><a href="https://www.hostingfromtheheart.com/user/login" style="color: rgba(243,242,238,0.7); text-decoration: none;">Login</a><a href="contact.html" style="color: rgba(243,242,238,0.7); text-decoration: none;">Privacy</a></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  state = { portfolioOpen: false, menuOpen: false };
+  componentDidMount() {
+    const header = document.getElementById('hfth-header');
+    const mkCream = document.getElementById('mk-cream');
+    const mkGold = document.getElementById('mk-gold');
+    const emailEl = document.getElementById('hfth-email');
+    if (emailEl) { const addr = 'thomas' + '@' + 'hfth.co'; emailEl.href = 'mailto:' + addr; emailEl.textContent = addr; }
+    const onScroll = () => {
+      const s = window.scrollY > 70;
+      if (header) {
+        header.style.background = s ? 'rgba(252,250,246,0.92)' : 'transparent';
+        header.style.borderBottomColor = s ? 'var(--border-subtle)' : 'transparent';
+        header.style.backdropFilter = s ? 'saturate(180%) blur(12px)' : 'none';
+        header.style.webkitBackdropFilter = s ? 'saturate(180%) blur(12px)' : 'none';
+        header.style.boxShadow = s ? '0 1px 0 rgba(46,43,40,0.04), 0 8px 24px -16px rgba(46,43,40,0.35)' : 'none';
+        header.style.setProperty('--hdr-ink', s ? 'var(--ink-900)' : 'var(--cream-50)');
+      }
+      if (mkCream && mkGold) {
+        mkCream.style.display = s ? 'none' : 'block';
+        mkGold.style.display = s ? 'block' : 'none';
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    this._onScroll = onScroll;
+  }
+  componentWillUnmount() {
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+  }
+  submitLead(e, kind) {
+    e.preventDefault();
+    const form = e.target;
+
+    // ── Lead destination ─────────────────────────────────────────────
+    // Leads are emailed to thomas@hfth.co. To send them SILENTLY (no email
+    // client popup), create a free access key at https://web3forms.com using
+    // thomas@hfth.co, then paste it between the quotes below. Until then, the
+    // form falls back to opening a pre-filled email to thomas@hfth.co.
+    const WEB3FORMS_ACCESS_KEY = "6e71612a-a1da-4319-a79b-af5ffe49fb9d";
+    const LEAD_EMAIL = "thomas@hfth.co";
+    // ─────────────────────────────────────────────────────────────────
+
+    let data = {};
+    try { data = Object.fromEntries(new FormData(form).entries()); } catch (_) {}
+    try { localStorage.setItem('hfth_lead_' + kind + '_' + Date.now(), JSON.stringify({ kind: kind, ...data })); } catch (_) {}
+
+    const isOwner = kind === 'owner';
+    const subject = (isOwner ? 'Property Review Request' : 'Acquire & Onboard Inquiry') + ' — ' + (data.name || 'New Lead');
+    const lines = [
+      'New ' + (isOwner ? 'property review request' : 'acquisition & onboarding inquiry') + ' from the Luxury Asset & Lifestyle presentation:',
+      '',
+      'Name: ' + (data.name || ''),
+      'Email: ' + (data.email || ''),
+      'Phone: ' + (data.phone || ''),
+      isOwner ? ('Property Address: ' + (data.propertyAddress || '')) : ('Target Market & Budget: ' + (data.targetMarket || '')),
+      '',
+      'Submitted: ' + new Date().toLocaleString(),
+    ];
+    const body = lines.join('\n');
+
+    const showSuccess = () => {
+      const card = form.closest('[data-capture]');
+      if (card) {
+        form.style.display = 'none';
+        const ok = card.querySelector('[data-success]');
+        if (ok) ok.style.display = 'block';
+      }
+    };
+
+    const mailtoFallback = () => {
+      try {
+        window.location.href = 'mailto:' + LEAD_EMAIL
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(body);
+      } catch (_) {}
+      showSuccess();
+    };
+
+    const key = (WEB3FORMS_ACCESS_KEY || '').trim();
+    if (key && typeof fetch === 'function') {
+      const payload = {
+        access_key: key,
+        subject: subject,
+        from_name: 'HFTH Presentation',
+        replyto: data.email || '',
+        Name: data.name || '',
+        Email: data.email || '',
+        Phone: data.phone || '',
+      };
+      if (isOwner) payload['Property Address'] = data.propertyAddress || '';
+      else payload['Target Market & Budget'] = data.targetMarket || '';
+      payload['Inquiry Type'] = isOwner ? 'Property Review (Current Owner)' : 'Acquire & Onboard (Prospective Investor)';
+
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.style.opacity = '0.7'; btn.textContent = 'Sending…'; }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then((r) => r.json())
+        .then((res) => { if (res && res.success) showSuccess(); else mailtoFallback(); })
+        .catch(() => mailtoFallback());
+    } else {
+      mailtoFallback();
+    }
+  }
+  scrollToId(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 64;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+  renderVals() {
+    const go = (id) => () => this.scrollToId(id);
+    const allHomes = ['Adventure Haus','Artisan Lodge','Auria','Baldwin','Blue River Buffalo Condo','Breckenridge Cottage','BreckHaven','Camp David','Creekside Chateau','Duncan House','Four Sisters - A Mountain Haven','Frisco Flat','Gold Pan Chalet','High Alpine Lodge','Imperial View Condo','Keystone Country Club','Kindred','Littleton Cottage','Magnolia','Mountain Manor','Mountain View Chalet','Seasons','Silverheels Lodge','Ski Hytte','Solstice','Soltierra','Star Mountain Lodge','Summit House','Twin Peaks Lodge','Whispering Pines','White Crown Chalet'];
+    const regions = [
+      { name: 'Breckenridge', href: 'breckenridge.html' },
+      { name: 'Keystone & Silverthorne', href: 'keystone-silverthorne.html' },
+      { name: 'Frisco & Copper Mountain', href: 'frisco-copper-mountain.html' },
+      { name: 'Fairplay', href: 'fairplay.html' },
+      { name: 'Littleton', href: 'littleton.html' },
+    ];
+    return {
+      portfolioOpen: this.state.portfolioOpen,
+      menuOpen: this.state.menuOpen,
+      togglePortfolio: () => this.setState(s => ({ portfolioOpen: !s.portfolioOpen, storyOpen: false })),
+      storyOpen: this.state.storyOpen,
+      toggleStory: () => this.setState(s => ({ storyOpen: !s.storyOpen, portfolioOpen: false })),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      allHomes, regions,
+      onPickHome: (e) => { if (e.target.value) window.open('listings-by-name.html', '_blank'); },
+      goTop: go('top'),
+      goStandard: go('standard'),
+      goPromise: go('promise'),
+      goClients: go('clients'),
+      goExperience: go('experience'),
+      goDifference: go('difference'),
+      goContact: go('contact'),
+      goEngage: go('engage'),
+      submitOwner: (e) => this.submitLead(e, 'owner'),
+      submitInvestor: (e) => this.submitLead(e, 'investor'),
+    };
+  }
+}
+</script>
+
+
+</body></html>
